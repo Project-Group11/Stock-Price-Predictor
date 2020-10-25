@@ -19,41 +19,48 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.XYChart;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
 import javafx.stage.Stage;
 
 public class MainController implements Initializable{
 	
+	public static String stock;
 	
 	@FXML
-	public ComboBox<String> combobox;
-	
-	ObservableList<String> list= FXCollections.observableArrayList("FB","Google","Microsoft");
-	@Override
-	public void initialize(URL location, ResourceBundle resources) {
-		// TODO Auto-generated method stub
-		combobox.setItems(list);
-	}
+	ToggleGroup toggle;
 	
 	public void submit(ActionEvent e) throws FileNotFoundException {
-		//String stock= combobox.getValue();
+		
+		RadioButton selectedRadioButton = (RadioButton) toggle.getSelectedToggle();
+		stock= selectedRadioButton.getText();
 		//System.out.println(stock);
 		
 		try {
+			System.out.println("Hello");
 			Stage primaryStage = new Stage();
 			Parent root= FXMLLoader.load(getClass().getClassLoader().getResource("application/new_window.fxml"));
 			Scene scene = new Scene(root,400,400);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
+			
 		} catch(Exception ef) {
 			ef.printStackTrace();
 		}
 		
 		//CSVReader reader= new CSVReader(new FileReader("H:\\5th Sem\\Project\\Stock Predictor Final\\Final Codes\\"+stock+".csv"));
 		//String[] nextLine;	
+	}
+
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+	
+		
 	} 
 }
