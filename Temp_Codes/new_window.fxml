@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.newcontroller">
+   <children>
+      <Label fx:id="pred" layoutX="90.0" layoutY="70.0" onInputMethodTextChanged="#btn" prefHeight="26.0" prefWidth="120.0" text="Label" />
+      <Label layoutX="16.0" layoutY="38.0" prefHeight="43.0" prefWidth="262.0" text="Predicted value (After 7 Days):" />
+      <Button layoutX="117.0" layoutY="172.0" mnemonicParsing="false" onAction="#btn" text="Click me" />
+      <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
