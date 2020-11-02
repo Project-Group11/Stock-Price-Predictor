@@ -1,0 +1,28 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root
+{
+/*  -fx-background: linear-gradient(to right bottom, #1cc7d0 ,#013ca6, #013ca6,#1cc7d0);
+	 -fx-background: linear-gradient(to top right, #08aeea 0%, #b721ff 100%);
+	  -fx-background: linear-gradient(to top right, #fc2c77 0%, #6c4079 100%);*/
+    /* background: #cd1f46; */
+    -fx-background: black;
+    -fx-background-attachment: fixed;
+    -fx-background-position: center;
+    -fx-background-size: cover;
+    -fx-font-family: 'Cookie','Calibri' sans-serif;
+}
+.label
+{
+	-fx-font-size: 40px;
+    -fx-text-align: center;
+    -fx-margin: 2.3em 0 1.5em;
+    -fx-text-transform: uppercase;
+    -fx-letter-spacing: 4px;
+    -fx-color: #fff;
+}
+.button
+{
+	-fx-font-size:30px;
+	-fx-font-color:black;
+	-fx-backgorund-color:white;
+}
