@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="heading" maxHeight="Infinity" maxWidth="Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.97" prefHeight="798.0" prefWidth="1516.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <AnchorPane layoutX="90.0" prefHeight="866.0" prefWidth="1412.0" stylesheets="@application.css">
+         <children>
+            <Label fx:id="heading2" layoutX="32.0" layoutY="30.0" maxHeight="Infinity" maxWidth="Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="66.0" prefWidth="671.0" text="Welcome to Stock Predictor by G11">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="720.0" layoutY="719.0" text="Harman Kaur Saini: 18103128" />
+            <Label layoutX="723.0" layoutY="668.0" text="Priyanka Chaudhary: 18103095" />
+            <Label layoutX="723.0" layoutY="692.0" text="Samridhi Mahajan: 18103108" />
+            <Label layoutX="725.0" layoutY="631.0" prefHeight="54.0" prefWidth="246.0" text="Ayush: 18103076">
+               <font>
+                  <Font size="7.0" />
+               </font>
+            </Label>
+            <Label fx:id="sub" layoutX="33.0" layoutY="108.0" text="Select the stock !!" />
+            <RadioButton layoutX="42.0" layoutY="363.0" mnemonicParsing="false" text="BA">
+               <toggleGroup>
+                  <ToggleGroup fx:id="toggle" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton layoutX="40.0" layoutY="429.0" mnemonicParsing="false" text="DAI.DE" toggleGroup="$toggle">
+               <font>
+                  <Font name="Bodoni MT Black" size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton layoutX="39.0" layoutY="565.0" mnemonicParsing="false" text="HOG" toggleGroup="$toggle" />
+            <RadioButton layoutX="41.0" layoutY="176.0" mnemonicParsing="false" text="EXPE" toggleGroup="$toggle" />
+            <RadioButton layoutX="40.0" layoutY="299.0" mnemonicParsing="false" text="XOM" toggleGroup="$toggle" />
+            <RadioButton layoutX="40.0" layoutY="500.0" mnemonicParsing="false" text="GE" toggleGroup="$toggle" />
+           <Label layoutX="725.0" layoutY="591.0" prefHeight="26.0" prefWidth="123.0" text="Team:">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <RadioButton layoutX="39.0" layoutY="636.0" mnemonicParsing="false" text="ITC.NS" toggleGroup="$toggle" />
+            <RadioButton layoutX="41.0" layoutY="233.0" mnemonicParsing="false" text="MMM" toggleGroup="$toggle" />
+            <Button fx:id="submit" layoutX="92.0" layoutY="706.0" mnemonicParsing="false" onAction="#submit" prefHeight="42.0" prefWidth="123.0" text="Submit">
+               <font>
+                  <Font size="10.0" />
+               </font></Button>
+            <Label layoutX="107.0" layoutY="557.0" text=" (Harley-Davidson, Inc.)" />
+            <Label layoutX="95.0" layoutY="492.0" text=" (General Electric Company)" />
+            <Label layoutX="126.0" layoutY="422.0" text=" (DAIMLER AG)" />
+            <Label layoutX="107.0" layoutY="293.0" text=" (Exxon Mobil Corporation)" />
+            <Label layoutX="115.0" layoutY="226.0" text=" (3M Company)" />
+            <Label layoutX="113.0" layoutY="169.0" text=" (Expedia Group, Inc.)" />
+            <Label layoutX="131.0" layoutY="628.0" text=" (ITC Ltd)" />
+            <TextArea layoutX="725.0" layoutY="96.0" prefHeight="470.0" prefWidth="594.0" text="Investing in a good stock but at a bad time can have disastrous results,&#10;while investing in a stock at the right time can bear profits. So, the proposed&#10;project is to reduce the  problem with suitable accuracy faced in such real &#10;time scenarios.&#10;&#10;Features:&#10;1. Comparison of actual and predicted data&#10;2. Value of the stock for the next 7 days in the form of a graph&#10;3. Graphical analysis of the stock one month later.&#10;&#10;&#10;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextArea>
+            <Label fx:id="about" layoutX="739.0" layoutY="36.0" prefHeight="54.0" prefWidth="254.0" text="About the Project" />
+            <Label layoutX="100.0" layoutY="355.0" text="(Boeing Company (The))" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

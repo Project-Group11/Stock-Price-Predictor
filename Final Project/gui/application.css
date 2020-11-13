@@ -1,0 +1,77 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#heading
+{
+/*-fx-background: linear-gradient(to right bottom, #1cc7d0 ,#013ca6, #013ca6,#1cc7d0);
+ 	 -fx-background: linear-gradient(to top right, #08aeea 0%, #b721ff 100%);
+	  -fx-background: linear-gradient(to top right, #fc2c77 0%, #6c4079 100%);
+     background: #cd1f46; */
+    -fx-background: black;
+    -fx-background-attachment: fixed;
+    -fx-background-position: center;
+    -fx-background-size: cover;
+    -fx-font-family: 'Cookie','Calibri' sans-serif;
+    -fx-color: #fff;
+}
+#win2
+{
+	    -fx-background: white;
+    -fx-background-attachment: fixed;
+    -fx-background-position: center;
+    -fx-background-size: cover;
+    -fx-font-family: 'Cookie','Calibri' sans-serif;
+    -fx-color: #000;
+}
+#heading2
+{
+	-fx-font-size: 40px;
+    -fx-text-align: center;
+    -fx-margin: 2.3em 0 1.5em;
+    -fx-text-transform: uppercase;
+    -fx-letter-spacing: 4px;
+    -fx-color: #000;
+}
+#heading1
+{
+	-fx-font-size: 40px;
+	-fx-background: white;
+    -fx-text-align: center;
+    -fx-margin: 2.3em 0 1.5em;
+    -fx-text-transform: uppercase;
+    -fx-letter-spacing: 4px;
+    -fx-color: #000;
+    -fx-font-family: 'Cookie','Calibri' sans-serif;
+}
+.label
+{
+	-fx-font-size: 25px;
+    -fx-text-align: center;
+    -fx-margin: 2.3em 0 1.5em;
+    -fx-text-transform: uppercase;
+    -fx-letter-spacing: 4px;
+    -fx-color: #000;	
+}
+#sub,#about
+{
+	-fx-font-size: 30px;
+    -fx-text-align: center;
+    -fx-margin: 2.3em 0 1.5em;
+    -fx-text-transform: uppercase;
+    -fx-letter-spacing: 4px;
+    -fx-color: #000;	
+}
+.radio-button
+{
+	-fx-font-size: 15px;
+	-fx-font-family: 'Comic Sans MS','Calibri' sans-serif;
+}
+
+.text-area {
+    -fx-font-family: 'Cookie';
+    -fx-font-size: 25px;
+    -fx-text-fill: #ffffff;
+    -fx-display-caret:true;
+}
+
+.text-area .content {
+    -fx-background-color: #000000;
+}
