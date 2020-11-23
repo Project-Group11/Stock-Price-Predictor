@@ -1,0 +1,8 @@
+Front End (Java, JavaFX Part): In folder: "gui"
+Python Part (Jupyter Notebooks, ML Model): In folder: "models"
+Predictor (written in Python) is in the jupyter notebook named "nextpredictor.ipynb"
+
+The folder "modelddata" contain files created automatically by various Models which are then used by Java Front End to display charts and prices.
+
+
+
